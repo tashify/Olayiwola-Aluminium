@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Olayiwola Aluminum - Your Trusted Aluminum Solutions Provider">
+    <meta name="description" content="Olayiwola Aluminum - Your Trusted Aluminum Solutions Provider Let Be Your Plug">
+    <meta name="author" content="Oyebade Taiwo comfort">
+    <link href="{{url_for('static', filename = 'fontawesome/css/all.css')}}" rel="stylesheet">
+    <script src="{{url_for('static',filename = 'fontawesome/js/all.js')}}"></script>
+
+    <link rel="icon" href="{{url_for('static', filename = 'favicon/favicon-32x32.png')}}">
+    <link href="{{url_for('static', filename = 'bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename = 'animate.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>{{pagename}}</title>
+</head>
+<body>
+    <header>
+        <!--NAV-BAR SECTION-->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-5 py-3">
+        <img src="{{url_for('static',filename = 'image/logo.png')}}" alt="" height="50px" class="px-1">
+      <a class="navbar-brand" href="#" style="font-size:x-large;">Olayiwola Aluminum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('service')}}">Services</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Project</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{{url_for('project_shower_cubicle')}}">Shower cubicle</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{url_for('project_door')}}">Door</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{url_for('project_railing')}}">Railing</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{url_for('project_window')}}">Window</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{url_for('project_others')}}">Others</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{url_for('project_supply')}}">Supply</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('blog')}}">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('about')}}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+    </nav>
+  <!--END SECTION-->
+    </header>

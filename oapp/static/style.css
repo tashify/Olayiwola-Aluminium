@@ -1,0 +1,446 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar{
+    background-color:rgb(6, 51, 51); 
+}
+
+.navbar a{
+    color: white;    
+}
+
+.navbar a:hover{
+    color: teal;
+}
+
+  .ban{
+    background-color:  rgb(6, 51, 51);
+  }
+
+.ban h1{
+    transform: translate(0%); 
+    position: absolute;
+    font-weight: 600;
+}
+
+.ban p{
+    transform: translate(0%); 
+    position:absolute; 
+    margin-top:6rem; 
+    font-size:small;  
+}
+
+.rows{
+    height:200px; 
+    margin-left:320px; 
+    margin-top:140px;
+}
+
+.col2{
+    height:170px; 
+    background-image: url(image/glass-window.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rows-cols{
+    background-color:white; 
+    min-height: 200px;
+}
+
+.rows-cols-1{
+    height:30px; 
+    color:#333;
+}
+
+.col1{
+    background-image: url(image/contrasting-outdoor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height:400px;
+ }
+
+
+ @media screen and (min-width: 750px) and (max-width: 1000px) {
+     
+.rows{
+    min-height:200px; 
+    margin-left:170px; 
+    margin-top:140px;
+}
+
+.col1{
+    min-height:500px;
+ }
+
+  .rows-cols{
+      min-height: 200px;
+  }
+
+  .col3{
+      min-height: 200px;
+  }
+   
+  }
+
+ 
+ @media screen and (min-width: 350px) and (max-width: 750px) {
+
+    .col1{
+        min-height:1000px;
+     }
+
+    .background h1{
+        position: static;
+    }
+
+    .background p{
+        position: static;
+        margin-top:0;
+    }
+
+    .rows {
+      height: 200px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .rows-cols{
+        min-height: 200px;
+    }
+
+    .col3{
+        min-height: 200px;
+    }
+  }
+
+
+.btn{
+    border-radius: 0px;
+    background-color:teal; 
+    color:white; 
+    border:none;
+    font-size:small;
+}
+
+.btn:hover{
+    background-color:rgb(6, 51, 51); 
+    color: white;
+}
+
+.btn-share{
+    background-color: white;
+    color: teal;
+}
+
+.col3{
+    background-color:rgba(220,220,220 ,0.8);
+    min-height: 200px;
+}
+
+.col3-para1{
+    color:#333;
+}
+
+.col3-para2{
+    font-size: small;
+}
+
+.para2{
+    color: #555;
+}
+
+.para3{
+    color: teal; 
+    text-decoration:none;
+}
+
+.para3:hover{
+    color: teal;  
+}
+
+.first-p{
+    font-size:50px; 
+    color:teal;
+}
+
+.row-parent{
+    justify-content: center;
+}
+
+.our-service{
+    max-width: 250px;
+    background:white; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    min-height: 250px;
+}
+
+.Selected {
+    background:white; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.Selected img{
+    transition: transform.3s ease-out;
+}
+
+.Selected img:hover{
+    transform: scale(1.05)
+}
+
+.share{
+    background-image: url(image/glass-window.jpg); 
+    height:700px; 
+    background-position:center; 
+    background-size:cover;
+}
+
+.share-1{
+    background-image: url(image/window.jpg);
+    background-position:center; 
+    background-size:cover; 
+}
+
+.share-1 h1{
+    font-size:50px; 
+    font-weight:600; 
+    line-height:70px; 
+    color:white;
+    transform: translate(110%); 
+    position: absolute;
+}
+
+.share-1 a{
+    margin-top: 20rem;
+    transform: translate(385%); 
+    position: absolute;
+
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .share-1 h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+.share-1 a{
+    transform: translate(310%); 
+
+}
+
+}
+
+/* Media query for screen size of 350px */
+@media (min-width: 350px) and (max-width: 900px) {
+    .share-1 h1 {
+        font-size: 30px;
+        line-height: 40px;
+        transform: translate(0);
+        position: static;
+    }
+    
+    .share-1 a{
+        margin-top: 0;
+        transform: translate(0); 
+        position: static;
+    
+    }
+
+}
+
+
+/*service-page section start*/
+.service-row{
+    background-image: url(image/building-apartment.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height:300px;
+}
+
+.service-col{
+    background-color: rgb(6, 51, 51);
+}
+
+.service-col h2{
+    font-size:80px;
+    font-weight: 600;
+}
+/*service-page section end*/
+
+
+/*project-page section start*/
+.project-row{
+    background-image: url(image/building-towers.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.dropdown-menu{
+    background-color:rgb(6, 51, 51) ;
+}
+
+.project-col{
+    background-color:rgb(6, 51, 51) ;
+}
+
+.project-col h2{
+    font-weight: 600;
+    font-size: 80px;    
+}
+/*project-page section end*/
+
+
+
+/*about-page section start*/
+.about-row{
+    background-image: url(image/building-business.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.about-col{
+    background-color:rgb(6, 51, 51);
+}
+
+.about-col h2{
+    font-weight: 600;
+    font-size: 54px;   
+}
+
+.content{
+    outline: 2px solid teal;
+    border-radius: 50%;
+}
+/*about-page section end*/
+
+
+
+/*contact-page section start*/
+.contact-row{
+    background-image: url(image/building-modern.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.contact-col{
+    background-color:rgb(6, 51, 51);
+}
+
+.contact-col h2{
+    font-weight: 600;
+    font-size: 44px;  
+}
+
+.background{
+   background-color: rgb(236, 241, 243);
+    border-radius: 0px;
+    border: 0px;
+}
+
+input{
+    height: 50px;
+}
+
+input::placeholder{
+    font-size: small;
+}
+
+textarea::placeholder{
+    font-size: small;
+}
+/*contact-page section end*/
+
+
+
+/*blog-page section start*/
+.blog-row{
+    background-image: url(image/building-shadows.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.blog-col{
+    background-color:rgb(6, 51, 51) ;
+}
+
+.blog-col h2{
+    font-weight: 600;
+    font-size: 80px;  
+}
+
+.col-new{
+    background-color: rgb(236, 241, 243);
+    position: sticky;
+    height: 450px;
+}
+
+.col-new h5{
+    font-weight: 600;
+    color: rgb(6,51,51);
+    font-size: 25px;
+}
+
+.col-new img{
+    float: left;
+    margin-right: 15px;
+}
+
+.col-new a{
+    text-decoration: none;
+}
+
+.col-new a:hover{
+    color: teal;
+}
+
+.new-para{
+    color: #666;
+}
+
+.list{
+    font-size: 20px;
+}
+
+.order-list{
+    list-style: none;
+}
+/*blog-page section end*/
+
+
+
+/*footer section start*/
+footer{
+    background-color:rgb(6, 51, 51); 
+    color: white;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color: teal;
+}
+/*footer section end*/
+

@@ -1,0 +1,68 @@
+{%include 'header.html'%}
+
+    <!--main section start-->
+    <main>
+        <div class="container-fluid mb-5">
+            <div class="row contact-row">
+                <div class="col-md-3 p-5 contact-col">
+                    <h2 class="mt-5 pt-5 animate__animated animate__fadeInDown">Contact Us</h2>
+                </div>
+                <div class="col-md"></div>
+            </div>
+
+            <!--start-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h1 class="mt-5 mb-5 animate__animated animate__fadeInRight" style="color: rgb(6, 51, 51); font-weight:600;">We Are Ready To Serve,<br>Get In Touch.</h1>
+                        
+                       <form action="" method="POST" id='myform'>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div>
+                                    <label for="mail">Name</label>
+                                    <input class="form-control background" id="username" name="username" type="text" placeholder="John Doe" required/>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div>
+                                    <label for="mail">Email</label>
+                                    <input class="form-control background" id="mail" name="mail"  type="email" placeholder="example@gmail.com"required />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="msg">Phone</label>
+                            <input class="form-control background" id='phone' name='phone' type='number' placeholder='Enter Your Phone Number' required/>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="msg">Message</label>
+                            <textarea name="msg" id="msg" cols="30" rows="10" class="form-control background" placeholder="Let me known about your project" required></textarea>
+                        </div>
+
+                        <div class="mt-4 mb-5">
+                            <button type="submit" class="btn col-6 p-3">Send Message</button>
+                        </div>
+                        <input type='hidden' name='csrf_token' value='{{csrf_token()}}'>
+                       </form>
+                    </div>
+                </div>
+
+            </div>
+            <!--end-->
+        </div>
+    </main>
+     <!--main section end-->
+
+
+      <!--footer section start-->
+      {%include 'footer.html'%}
+    <!--footer section end-->
+    <script src="{{url_for('static', filename = 'bootstrap/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{url_for('static', filename = 'jquery.js')}}"></script>
+</body>
+</html>

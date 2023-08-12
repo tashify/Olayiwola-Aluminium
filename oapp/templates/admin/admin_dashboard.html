@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Olayiwola Aluminum - Your Trusted Aluminum Solutions Provider">
+    <meta name="description" content="Olayiwola Aluminum - Your Trusted Aluminum Solutions Provider Let Be Your Plug">
+    <meta name="author" content="Oyebade Taiwo comfort">
+    <link href="{{url_for('static', filename = 'fontawesome/css/all.css')}}" rel="stylesheet">
+    <script src="{{url_for('static',filename = 'fontawesome/js/all.js')}}"></script>
+
+    <link rel="icon" href="{{url_for('static', filename = 'favicon/favicon-32x32.png')}}">
+    <link href="{{url_for('static', filename = 'bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename = 'animate.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Admin Dashboard -Olayiwola Aluminium</title>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark mb-5" style='background:rgb('6','51','51');'>
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="/admin/dashboard">OLAYIWOLA ALUMINIUM</a>
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"></form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="{{url_for('admin_logout')}}">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md'>
+                        <table class='table'>
+                            <thead>
+                                <tr>
+                                  <th scope="col">S/N</th>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Phone No</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">Message</th>
+                                  <th scope="col">Date</th>
+                                </tr>
+                              </thead>
+                              
+                              <tbody>
+                                {% for c in  userdeets %}
+                                  <tr>
+                                    <th scope="row">{{loop.index}}</th>
+                                    <td>{{ c.cont_name}}</td>
+                                    <td>{{ c.cont_phone}}</td>
+                                    <td>{{ c.cont_email}}</td>
+                                    <td>{{ c.cont_msg}}</td>
+                                    <td>{{ c.cont_reg_date.strftime('%a %d %b %y')}}</td>
+                                  </tr>
+                                 {% endfor %}
+                                </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+{%include'footer.html'%}
+<script src="{{url_for('static', filename = 'bootstrap/js/bootstrap.bundle.js')}}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

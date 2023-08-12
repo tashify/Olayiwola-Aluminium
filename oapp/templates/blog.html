@@ -1,0 +1,85 @@
+{%include 'header.html'%}
+
+      <!--main section start-->
+      <main>
+        <div class="container-fluid mb-5">
+            <div class="row blog-row">
+                <div class="col-md-3 p-5 blog-col">
+                    <h2 class="mt-5 pt-5 animate__animated animate__fadeInDown">Blog</h2>
+                </div>
+                <div class="col-md"></div>
+            </div>
+
+
+            <!--start-->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4 col-new">
+                        <h5 class="mt-3 mb-4">Latest Post</h5>
+                            <div>
+                                <img src="{{url_for('static',filename = 'image/building.jpg')}}" alt="building" height="100px" width="100px">
+                                <p><a href="{{url_for('blog')}}" class="para2">Maximizing natural light how aluminum windows enhance your living space</a></p> 
+                            </div>
+
+                            <br><br>
+                            
+                            <div>
+                                <img src="{{url_for('static',filename = 'image/city-background-panoramic-view.jpg')}}" alt="building" height="100px" width="100px">
+                                <p><a href="{{url_for('article_one')}}" class="para2">The beauty of aluminum facades enhancing the exterior appeal of commercial buildings</a></p>
+                            </div>
+
+                            <br><br>
+                            
+                            <div class="mb-5">
+                                <img src="{{url_for('static',filename = 'image/urban-stairs.jpg')}}" alt="building" height="100px" width="100px">
+                                <p><a href="{{url_for('article_two')}}" class="para2">Creating open spaces aluminum partition systems redefining interior design</a></p>
+                            </div>
+                    </div>
+
+                    <div class="col-md mx-5">
+                        <img src="{{url_for('static',filename = 'image/building.jpg')}}" alt="building" height="500px" width="100%">
+                        <p class="mt-3 new-para">Discover how aluminum windows can brighten up your interiors and create a more welcoming ambiance.</p>
+                        <p class="new-para">When it comes to designing our living spaces, one key element that often takes center stage is natural light. The presence of ample natural light not only elevates the aesthetics of our homes but also plays a significant role in enhancing our overall well-being and mood. If you're looking to brighten up your interiors and create a more welcoming ambiance, look no further than aluminum windows. In this article, we explore how aluminum windows can transform your living space and the numerous benefits they offer.</p>
+
+                        <ol>
+                            <li class="new-para list"><p>Embrace the Beauty of Sunlight</p></li>
+                            <p class="new-para">Aluminum windows are designed to allow generous amounts of sunlight to flood your interiors. With their sleek and slender frames, these windows maximize the glass area, providing unobstructed views and drawing sunlight deep into your rooms. As sunlight filters through, it bathes your living space in a warm, natural glow, creating an inviting and cheerful atmosphere.</p>
+                            
+                            <li class="new-para list"><p>Create the Illusion of Spaciousness</p></li>
+                            <p class="new-para">The play of natural light can work wonders in creating the illusion of spaciousness, making even compact rooms feel larger and airier. The brightness and expansiveness brought about by aluminum windows can transform confined spaces into inviting retreats.</p>
+
+                            <li class="new-para list"><p>Energy Efficiency at Its Best</p></li>
+                            <p class="new-para">Aluminum windows are not only aesthetically pleasing but also energy-efficient. Thanks to advancements in window technology, modern aluminum windows come equipped with thermal breaks and energy-efficient glazing options. These features help to retain indoor heat during colder months and keep out the heat during warmer months, ensuring your home remains comfortable all year round while reducing energy consumption.</p>
+
+                            <li class="new-para list"><p>Sustainable and Durable</p></li>
+                            <p class="new-para">As an environmentally friendly option, aluminum windows are highly sustainable. Aluminum is a recyclable material, making these windows an eco-conscious choice for the environmentally aware homeowner. Additionally, aluminum is naturally resistant to corrosion and rust, ensuring your windows maintain their pristine appearance for years to come.</p>
+
+                            <li class="new-para list"><p>Low Maintenance, High Style</p></li>
+                            <p class="new-para">With their inherent strength and durability, aluminum windows require minimal maintenance. A simple wipe down with a damp cloth is usually sufficient to keep them looking as good as new. Moreover, their clean lines and contemporary design add a touch of modern sophistication to your home's architecture.</p>
+
+                            <li class="new-para list"><p>Versatility in Design</p></li>
+                            <p class="new-para">Aluminum windows offer a wide range of design options, making them versatile enough to complement any style of home decor. Whether your aesthetic leans toward minimalist, industrial, or classic, you can find aluminum window designs that seamlessly integrate with your interior design vision.</p>   
+                        </ol>
+                        
+                        <ul>
+                            <li class="new-para list order-list"><p>Conclusion</p></li>
+                            <p class="new-para">Aluminum windows go beyond mere practicality and aesthetics; they have the power to transform your living space into a bright, welcoming sanctuary. With their ability to harness natural light, improve energy efficiency, and elevate the overall ambiance of your home, aluminum windows stand as a clear choice for homeowners seeking style, sustainability, and functionality.</p>
+                            <p class="new-para">If you're looking to infuse your living space with the beauty of natural light, consider upgrading to aluminum windows. Experience the joy of brighter interiors and a more inviting atmosphere that will truly elevate your home living experience.</p>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!--end-->
+        </div>
+      </main>
+       <!--main section end-->
+
+        <!--footer section start-->
+        {%include 'footer.html'%}
+         <!--footer section end-->
+    
+         <script src="{{url_for('static', filename = 'bootstrap/js/bootstrap.bundle.js')}}"></script>
+         <script src="{{url_for('static', filename = 'jquery.js')}}"></script>
+</body>
+</html>
